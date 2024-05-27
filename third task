@@ -1,0 +1,36 @@
+#include<iostream>
+using namespace std;
+
+int main(){
+
+	int n;
+	cout<<"Enter The Number: ";
+	cin>>n;
+	  if (n <= 0) {
+        cout << "Invalid input. Please enter a positive integer." << endl;
+        return 1;
+    }
+	int ans=0;
+	int start=  0;
+	int next = 1;
+	if(n ==1){
+		ans  = start;
+	}
+	   else if (n == 2) {
+        ans = next;
+		}
+     else{
+     	
+	 }  
+	for(int i =3;i<=n+1;i++){
+		
+	 ans = start + next;
+		start = next;
+		next =ans;
+		cout<<endl;
+		cout<<"Fibonacci "<<"of "<<i-1 <<" is "<<ans<<endl;
+	}
+	cout<<endl<<endl;
+cout<<"so Fibonacci  of "<<n<< " is "<<ans<<endl;
+
+}
