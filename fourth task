@@ -1,0 +1,43 @@
+#include <iostream>
+#include <cstdlib>
+#include <ctime>
+
+
+using namespace std;
+int main(){
+	 srand(time(0));
+
+		int randomNumber  ;
+	int higher,lower,number;
+	 cout << "You have only five chances." << endl;
+    cout << "GUESS THE NUMBER" << endl;
+
+
+
+	for(int i = 0;i<5;i++){
+		randomNumber = rand()*0.1;
+	 higher = randomNumber+1;
+      lower  = randomNumber-2;
+             cout << "Please select a number between " << lower << " to " << higher << ": ";
+        cin >> number;
+       if (number == randomNumber) {
+            cout << "Congratulations! You guessed the right number." << endl;
+      	break;
+	  }
+	  else {
+	  	 cout << "Try again!" << endl;
+	  	
+	  }
+	}
+      
+    
+      
+    
+      
+     
+    
+    
+    
+	
+	//cout<<"THE RSNDOM NUMBER : "<<randomNumber;
+}
