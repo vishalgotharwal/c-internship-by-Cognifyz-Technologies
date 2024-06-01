@@ -1,0 +1,63 @@
+#include<iostream>
+using namespace std;
+int main(){
+	int n;
+	int math;
+	int science;
+	int hindi;
+	int socialscience;
+	int english;
+	cout<<"enter the number of subjects"<<endl;
+	cin>>n;
+
+cout<<"enter the numebr of math : ";
+cin>>math;
+cout<<"enter the numebr of science : ";
+cin>>science;
+cout<<"enter the numebr of hindi : ";
+cin>>hindi;cout<<"enter the numebr of social science : ";
+cin>>socialscience;
+cout<<"enter the numebr of english : ";
+cin>>english;
+
+int average = (math+science+hindi+socialscience+english)*100;
+int grade = average/500;
+	cout<<"----------------------------------------------"<<endl;
+cout<<"percentage is : "<<grade<<"%"<<endl;
+	cout<<"----------------------------------------------"<<endl;
+if(grade>90 && grade<100){
+		cout<<"----------------------------------------------"<<endl;
+	cout<<"GRADE "<<"A+"<<endl;
+		cout<<"----------------------------------------------"<<endl;
+}
+else if(grade>80 && grade<90){
+		cout<<"----------------------------------------------"<<endl;
+	cout<<"GRADE "<<"A"<<endl;
+		cout<<"----------------------------------------------"<<endl;
+}
+else if(grade>70 && grade<80){
+		cout<<"----------------------------------------------"<<endl;
+	cout<<"GRADE "<<"B"<<endl;
+		cout<<"----------------------------------------------"<<endl;
+}
+else if(grade>60 && grade<70){
+		cout<<"----------------------------------------------"<<endl;
+	cout<<"GRADE "<<"c"<<endl;
+		cout<<"----------------------------------------------"<<endl;
+}
+else if(grade>50 && grade<60){
+		cout<<"----------------------------------------------"<<endl;
+	cout<<"GRADE "<<"D"<<endl;
+		cout<<"----------------------------------------------"<<endl;
+}
+else if(grade>36 && grade<50){
+		cout<<"----------------------------------------------"<<endl;
+	cout<<"GRADE "<<"E"<<endl;
+		cout<<"----------------------------------------------"<<endl;
+}
+else{
+	cout<<"----------------------------------------------"<<endl;
+	cout<<"FAIL";
+	cout<<"----------------------------------------------"<<endl;
+}
+}
